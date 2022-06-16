@@ -1,19 +1,10 @@
-## 注意事项
 
-0）**最新** Cloudflare Page域名还没被SNI阻断，利用[此项目](https://github.com/xyTom/cf-page-func-proxy)可利用CF Pages反代。（无需自定义域名）
 
-1）5月8日晚，CloudFlare Workers 的业务域名 Workers.dev 被防火长城 DNS 污染、SNI阻断。
 
-2）CloudFlare Workers，可自定义workers域名，教程已更新至博客`ifts.ml`；经过添加自定义域名，更换Host和SNI后已可正常使用。
+## hh
+[![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/esetools/asddceedfeffsf.git)
 
-3）接入点可以直接使用我的自选IP域名`uicdn.cf`，每30分钟更新一次。
-
-#### 交流群[https://t.me/iflugp](https://t.me/iflugp)
-
-## v2ray-heroku
-[![](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/DaoChen6/Heroku-v2ray.git)
-
-### heroku上部署v2ray
+### h上
 - [x] 支持VMess和VLESS两种协议
 - [x] 支持自定义websocket路径
 - [x] 伪装首页（3D元素周期表）
@@ -43,8 +34,6 @@
 |  UUID |  [uuid在线生成器](https://www.uuidgenerator.net "uuid在线生成器") | 用户主ID  |
 |  WS_PATH | 默认为`/daochen6` |  路径，请勿使用`/speedtest`，`/`，`/test` 等已经被占用的请求路径 |
 
-### 进阶
-heorku可以绑卡（应用一直在线，不扣费），绑定域名，套cf，[uptimerobot](https://uptimerobot.com/) 定时访问防止休眠（只监控CF Workers反代地址好了，不然几个账户一起监控没几天就把时间耗完了）
 
 ### CloudFlare Workers反代代码（可分别用两个账号的应用程序名（`PROTOCOL`、`UUID`、`WS_PATH`保持一致），单双号天分别执行，那一个月就有550+550小时）
 <details>
